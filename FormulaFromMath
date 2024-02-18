@@ -2,4 +2,4 @@ import math
 
 # возведение числа 2 в степень 3
 n1 = math.pow(2, 10)
-print(n1)  # 8
+print(n1)
