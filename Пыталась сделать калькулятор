@@ -1,0 +1,34 @@
+operator = input("Введите операцию(+,-,*,/): ")
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+
+while True:
+    if operator == '+':
+        result = a + b
+    elif operator == '-':
+        result = a - b
+    elif operator == '*':
+        result = a * b
+    elif operator == '/':
+        result = a / b
+
+    print(result)
+
+    while True:
+        operator = input("Введите операцию(+,-,*,/): ")
+        a = float(input("Введите первое число: "))
+        b = float(input("Введите второе число: "))
+
+        if operator == '+':
+            result = a + b
+        elif operator == '-':
+            result = a - b
+        elif operator == '*':
+            result = a * b
+        elif operator == '/':
+            result = a / b
+
+        print(result)
+
+if operator == "стоп":
+    exit()
