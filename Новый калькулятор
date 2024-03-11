@@ -3,7 +3,6 @@ a = float(input("Введите первое число: "))
 b = float(input("Введите второе число: "))
 print("Чтобы завершить напишите слово стоп")
 
-while True:
     if operator == '+':
         result = a + b
     elif operator == '-':
