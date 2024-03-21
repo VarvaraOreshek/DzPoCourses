@@ -1,0 +1,8 @@
+str = input("Введдите предложение: ")
+letters = {"п": 0, "к": 0, "ф": 0, "т": 0}
+
+for letter in str:
+    if letter in letters:
+        letters[letter] = letters[letter] + 1
+
+print(letters)
