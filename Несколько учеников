@@ -1,0 +1,37 @@
+class Students:
+    def __init__(self, name, age, favorite_subject):
+        self.name = name
+        self.age = age
+        self.favorite_subject = favorite_subject
+
+    def teaching_Ilya(self):
+        print("—А что ты на сегодня делала?")
+
+    def read_Ilya(self):
+         print("—А где мы читаем?")
+
+    def teaching_Varya(self):
+        print("—Только русский и алгебру")
+
+    def read_Varya(self):
+        print("—Мы вообще на другой странице")
+
+    def teaching_Andrey(self):
+        print("—А.. если радиус больше расстояния.. в окружности. То точки пересечения две.")
+    def read_Andrey(self):
+        print("—Эх, эх, куда молодежь катится.. ахаха!")
+
+student = Students( "Илья", "14 лет", "вероятность и статистика")
+print(f"Ученик: Имя {student.name}, Возраст {student.age}, Любимый предмет {student.favorite_subject}")
+student.teaching_Ilya()
+student.read_Ilya()
+
+student = Students( "Варвара", "15 лет", "Обществознание")
+print(f"Ученик: Имя {student.name}, Возраст {student.age}, Любимый предмет {student.favorite_subject}")
+student.teaching_Varya()
+student.read_Varya()
+
+student = Students( "Андрей", "14 лет", "ОБЖ")
+print(f"Ученик: Имя {student.name}, Возраст {student.age}, Любимый предмет {student.favorite_subject}")
+student.teaching_Andrey()
+student.read_Andrey()
