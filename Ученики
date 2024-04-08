@@ -1,0 +1,18 @@
+class Student:
+    def __init__(self, name, age, favorite_subject):
+        self.name = name
+        self.age = age
+        self.favorite_subject = favorite_subject
+
+    def teaching(self):
+        print("—А что ты на сегодня делала?")
+
+    def read(self):
+        print("—А где мы читаем?")
+
+
+
+student = Student( "Илья", "14 лет", "вероятность и статистика")
+print(f"Ученик: Имя {student.name}, Возраст {student.age}, Любимый предмет {student.favorite_subject}")
+student.teaching()
+student.read()
