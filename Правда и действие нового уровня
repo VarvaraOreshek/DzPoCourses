@@ -1,0 +1,30 @@
+import telebot
+from telebot.types import KeyboardButton, ReplyKeyboardMarkup
+
+'telebot'
+
+
+API_TOKEN = '6952070641:AAGjePyppo2PMnFnMIkO3qdc963Adij4mTk'
+
+bot = telebot.TeleBot(API_TOKEN)
+
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(KeyboardButton('правда'))
+    markup.add(KeyboardButton('действие'))
+
+    bot.reply_to(message, 'Выбери правда и действие',
+            reply_markup=markup,
+    )
+
+@bot.message_handler(func=lambda message: True)
+def hanle_calculation(message):
+    if message.text == "правда":
+        bot.reply_to(message, "Сколько часов ты спишь?")
+    elif message.text == "действие":
+        bot.reply_to(message, "Съешь клубнику")
+    else:
+        bot.reply_to(message, "Чего?")
+
+bot.infinity_polling()
