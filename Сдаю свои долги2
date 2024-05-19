@@ -1,0 +1,13 @@
+@bot.message_handler(commands=['about bot'])
+def send_welcome(message):
+    menu = types.ReplyKeyboardMarkup(row_width=2)
+    Creation_button = types.KeyboardButton("Как создавался этот бот")
+    errors_button = types.KeyboardButton("ошибки, которые могут возникнуть у бота при общении")
+    functions_button = types.KeyboardButton("Функции этого бота")
+    Add-ons_button = types.KeyboardButton("Дополнения в будущем")
+    avtor_button = types.KeyboardButton("Об авторе этого бота")
+    menu.add(Creation_button)
+    menu.add(errors_button)
+    menu.add(functions_button)
+    menu.add(Add-ons_button)
+    menu.add(avtor_button)
